@@ -230,7 +230,7 @@ def organize_and_send(list_words, results, res_num, relevant_results, sms_body, 
         smtp.sendmail(EMAIL_ADDRESS, SEND_TO_EMAIL, msg)
 
 
-schedule.every().day.at("00:18").do(running, i, pg_num, job_num, res_num, sms_body, email_body, email_subject)
+schedule.every().day.at("00:02").do(running, i, pg_num, job_num, res_num, sms_body, email_body, email_subject)
 while True:
     schedule.run_pending()
     time.sleep(1)
