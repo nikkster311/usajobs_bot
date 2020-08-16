@@ -1,4 +1,4 @@
-# from datetime import datetime, timedelta
+from datetime import datetime, timedelta
 #
 # d = datetime.now() + timedelta(1)
 #
@@ -7,11 +7,16 @@
 # da = (datetime.now()).strftime("%m/%d/%Y")
 #
 # print(da)
-job_num = 25
-jobs = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-print("job_num = " + str(job_num))
-print("lenjobs = " + str(len(jobs)))
-print(job_num == len(jobs))
+
+print ((datetime.now()).strftime("%Y-%m-%d %H:%M:%S"))
+
+
+
+# job_num = 25
+# jobs = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+# print("job_num = " + str(job_num))
+# print("lenjobs = " + str(len(jobs)))
+# print(job_num == len(jobs))
 
 
 # list_words = ["Technician", "Park", "Technology", "Ranger", "Guide"]

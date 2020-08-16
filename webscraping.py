@@ -49,7 +49,7 @@ print("will search now...")
 def running(i, pg_num, job_num, res_num, sms_body, email_body, email_subject):
     print("RUNNING")
     print("///////////////////////////////")
-    print (now.strftime("%Y-%m-%d %H:%M:%S"))
+    print ((datetime.now()).strftime("%Y-%m-%d %H:%M:%S"))
 
     list_words = ["Technician", "Park", "Technology", "Ranger", "Interp", "Interpretation", "Guide"]
 
@@ -231,7 +231,7 @@ def organize_and_send(list_words, results, res_num, relevant_results, sms_body, 
         # THIS IS THE FORMAT = smtp.sendmail(SENDER, RECIEVER, msg)
         smtp.sendmail(EMAIL_ADDRESS, SEND_TO_EMAIL, msg)
         print("///////////////////////////////")
-        print (now.strftime("%Y-%m-%d %H:%M:%S"))
+        print((datetime.now()).strftime("%Y-%m-%d %H:%M:%S"))
         print("///////////////////////////////")
 
 
