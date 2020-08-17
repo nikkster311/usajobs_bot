@@ -236,6 +236,7 @@ def organize_and_send(list_words, results, res_num, relevant_results, sms_body, 
 
 
 schedule.every().day.at("00:02").do(running, i, pg_num, job_num, res_num, sms_body, email_body, email_subject)
+schedule.every().day.at("04:30").do(running, i, pg_num, job_num, res_num, sms_body, email_body, email_subject)
 while True:
     schedule.run_pending()
     time.sleep(1)
